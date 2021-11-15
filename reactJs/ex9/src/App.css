@@ -1,0 +1,52 @@
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 0px 10px;
+}
+.menu{
+	font-size: 3rem;
+    margin: 0;
+	border: none;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.main{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 90vh;
+}
+h2{
+	color: #1F2937;
+	text-align: center;
+	font-size:1.8rem;
+	margin: 10px 0px;
+}
+.container{
+	display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 400px;
+	border-radius: 0.5rem;
+	background-color: #656C78;
+	padding: 1.5rem 1rem 1.5rem 1rem;
+	opacity: 90;
+}
+.login{
+	display: flex;
+	flex-direction: column;
+}
+label{
+	margin: 5px 0px;
+}
+
+.btn{
+	margin:20px 0px 0px 0px;
+	height: 43px;
+	width: 218px;
+	border-radius: 0.5rem;
+	border: none;
+	background-color: #111827;
+	color: #fff;
+}

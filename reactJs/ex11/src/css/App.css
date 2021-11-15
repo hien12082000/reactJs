@@ -1,0 +1,32 @@
+.box {
+	/*  */
+}
+
+.title {
+	text-align: center;
+}
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form__content {
+	border: 1px solid #000000;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+}
+
+.form__field {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.tooltiptext {
+	text-align: center;
+	font-size: 10px;
+	color: red;
+}

@@ -1,0 +1,24 @@
+
+table{
+  width: 50%;
+}
+th{
+  text-align: center;
+  color: tomato;
+  padding:10px;
+}
+td{
+  text-align: center;
+  color:rgb(25, 0, 255);
+  padding: 10px;
+}
+table, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+div{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center
+}

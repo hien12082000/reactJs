@@ -1,0 +1,10 @@
+/* .background{
+	background-image: url('../images/night-sky.jpeg');
+
+} */
+.img{
+	position: absolute;
+	width: 100vw;
+	height: 110%;
+	z-index: -100;
+}

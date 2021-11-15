@@ -1,0 +1,232 @@
+
+
+#header{
+  height: 4rem;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#main .main__content {
+  width: 80%;
+  display: flex;
+  background-color: #04B4E0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgb(192, 191, 191);
+}
+
+#main .main__content__left{
+  width: 30%;
+  background-color: #04B4E0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+
+}
+
+#main .main__content__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.main__content__left__top__img > img{
+  display: block;
+  max-width: 80%;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+h3{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-top: 0.5em;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+}
+h2{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color : #888;
+}
+h4{
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.main__content__left__contacts{
+  display: flex;
+  justify-content: center;
+}
+.main__content__left__contacts > div{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.main__content__left__download{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main__content__left__download > div{
+  height: 20vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__content__left__download h5 {
+  color: #FFFFFF;
+  font-weight: 500;
+  border: 2px solid rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+.main__content__left__download >div> a{
+  text-decoration: none;
+}
+.main__content__left__footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+h6{
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.main__content__left__contacts > div > a{
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+.main__tools{
+  width: 5%;
+  margin-left: 20px;
+}
+.main__tools__top{
+  height: 50vh;
+  width: 100%;
+  border-radius: 40px;
+  background-color:#FFFFFF;
+}
+
+.main__tools__bottom{
+  margin-top: 10vh;
+  height: 20vh;
+  width: 100%;
+  border-radius: 40px;
+  background-color:#FFFFFF;
+}
+.main__content__left__contacts > div > a:hover{
+  background-color: rgba(255,255,255,0.3);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.main__content__left__download > div > a:hover{
+  background-color:#FFFFFF;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.main__content__left__download > div > a:hover > h5 {
+  color: #04B4E0;
+}
+
+.main__tools__top > div{
+  height: 60px;
+  width:100%;
+  margin-left: 1.4rem;
+  margin-top: 0.7rem;
+  font-size: 30px;
+  color: rgb(201, 198, 198);
+  position: relative;
+  display: inline-block;
+}
+.main__tools__top > div:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.main__tools__top> div .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: rgba(0, 255, 255, 0.418);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+.main__tools__top>div:hover .tooltiptext {
+  visibility: visible;
+}
+.main__tools__bottom > div{
+  height: 60px;
+  width:100%;
+  margin-left: 1.7rem;
+  margin-top: 0.7rem;
+  font-size: 30px;
+  color: rgb(201, 198, 198);
+  position: relative;
+  display: inline-block;
+}
+
+.main__tools__bottom > div:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.main__tools__bottom> div .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: rgba(0, 255, 255, 0.418);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+  top: -5px;
+  right: 105%;
+}
+.main__tools__bottom > div:hover .tooltiptext {
+  visibility: visible;
+}

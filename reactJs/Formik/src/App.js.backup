@@ -1,0 +1,57 @@
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import { Formik } from "formik";
+
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		// this.handleSubmit = this.handleSubmit.bind(this);
+		// this.input = React.createRef();
+	}
+	// handleSubmit() {
+	// 	console.log(this.input.current.value);
+	// 	if (this.input.current.value.length < 8) {
+	// 		console.log("viet lai");
+	// 	} else {
+	// 		console.log("hop le");
+	// 	}
+	// }
+	render() {
+		return (
+			<div>
+				<Formik
+					initialValues={{ demo: "" }} // laf 1 prop co ten bat buoc la initialValues(gia tri khoi tao)
+					validate={(values) => {
+						const errors = {};
+						console.log(values);
+						if (values.demo.length < 8) {
+							errors.demo = "Khong Hop Le";
+						}
+						return errors;
+					}}
+					onSubmit={(values) => {
+						console.log("Submited");
+					}}
+				>
+					{({ values, errors, touched, handleChange, handleBlur, handleSubmit })  => (
+						// la 1 function de in ra jsx
+						<form onSubmit={handleSubmit}>  
+							<input
+								type="text"
+								name="demo"
+								onChange={handleChange}
+								onBlur={handleBlur} // sk khi ma cai element ko dc focus 
+								value={values.demo} // tao value
+							/> 
+							{errors?.demo && touched?.demo && errors?.demo}
+							<button type="submit">submit</button>
+						</form>
+					)}
+				</Formik>
+			</div>
+		);
+	}
+}
+
+export default App;
